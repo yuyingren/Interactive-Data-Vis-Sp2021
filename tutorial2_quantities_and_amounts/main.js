@@ -1,3 +1,4 @@
+
 d3.csv('../data/squirrelActivities.csv', d3.autoType).then(data => {
     console.log('data', data)
 
@@ -8,7 +9,7 @@ const xScale = d3.scaleBand()
     .domain(data.map(d => d.activity))
     .range([0, width])
     .paddingInner(.3)
-// console.log(xScale.domain(), xScale.range())
+//console.log(xScale.domain(), xScale.range())
 
 const yScale = d3.scaleLinear()
     .domain([0, d3.max(data, d => d.count)])
@@ -20,9 +21,11 @@ const svg = d3.select("#barchart")
     .attr("width", width)
     .attr("height", height)
 
-//const myColor = d3.scaleOrdinal()
-//    .domain(data.map(d => d.activity))
-//    .range(["#90B44B", "#D9CD90", "#90B44B", "#D9CD90", "#90B44B"])
+const myColor = d3.scaleOrdinal()
+    .domain(data.map(d => d.activity))
+    .range(["#90B44B", "#42602D", "#90B44B", "#42602D", "#90B44B"])
+
+//console.log(myColor.domain(), myColor.range())
 
 svg.selectAll("rect")
     .data(data)
@@ -31,5 +34,6 @@ svg.selectAll("rect")
     .attr("height", d => height - yScale(d.count))
     .attr("x", d => xScale(d.activity))
     .attr("y", d => yScale(d.count))
-    .style("fill", "#90B44B")
+    .attr("fill", d => myColor(d.activity))
+
 })
