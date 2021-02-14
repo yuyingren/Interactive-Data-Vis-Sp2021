@@ -2,8 +2,8 @@
 d3.csv('../data/squirrelActivities.csv', d3.autoType).then(data => {
     console.log('data', data)
 
-const width = 300 //window.innerWidth *.4;
-const height = 300 //window.innerHeight /3;
+const width = window.innerWidth *.4;
+const height = window.innerHeight /3;
 
 const xScale = d3.scaleBand()
     .domain(data.map(d => d.activity))
@@ -39,27 +39,30 @@ svg.selectAll("rect")
 
 const xScale1 = d3.scaleLinear()
     .domain([0, d3.max(data, d => d.count)])
-    .range([width, 0])
+    .range([0, width])
+
 console.log(xScale1.domain(), xScale1.range())
+
 const yScale1 = d3.scaleBand()
     .domain(data.map(d => d.activity))
-    .range([0, height])
+    .range([height, 0])
     .paddingInner(.2)
+
 console.log(yScale1.domain(), yScale1.range())
 console.log(yScale1, yScale1('eating'))
 
 const svg1 = d3.select("#barchart1")
     .append("svg")
-    .attr("width", height)
-    .attr("height", width)
+    .attr("width", width)
+    .attr("height", height)
 
 svg1.selectAll("rect")
     .data(data)
     .join("rect")
     .attr("height", yScale1.bandwidth())
-    .attr("width", d => width - xScale1(d.count))
+    .attr("width", d => xScale1(d.count))
     .attr("y", d => yScale1(d.activity))
-    .attr("x", d => xScale1(d.count))
+    .attr("x", d => 0)
     .attr("fill", d => myColor(d.activity))
 
 })
