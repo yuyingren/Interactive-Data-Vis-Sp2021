@@ -1,3 +1,21 @@
 svg{
     border: palevioletred 3px solid;
 }
+table{
+    border-collapse: collapse;
+}
+table{
+    border: 2px solid palevioletred;
+    text-align: center;
+    border-inline-style: hidden;
+}
+th{
+    padding: 0.5rem;
+    width: 5rem;
+    background-color: #FEDFE1;
+    border-top: 2px solid palevioletred;
+    border-bottom: 2px solid palevioletred;
+}
+td{
+    padding: 0.3rem;
+}
