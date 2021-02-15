@@ -2,7 +2,7 @@
 d3.csv('../data/squirrelActivities.csv', d3.autoType).then(data => {
     console.log('data', data)
 
-const width = window.innerWidth *.4;
+const width = window.innerWidth *.5;
 const height = window.innerHeight /3;
 
 const xScale = d3.scaleBand()
