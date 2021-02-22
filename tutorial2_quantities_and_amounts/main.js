@@ -7,7 +7,7 @@ const width = window.innerWidth *.5;
 const height = window.innerHeight /3;
 const margins = { top:10, bottom: 25, left:10, right:10}; 
 
-// the first svg of the vertical bar chart
+// first svg; the vertical barchart
 
 const xScale = d3.scaleBand()
     .domain(data.map(d => d.activity))
@@ -29,7 +29,7 @@ const svg = d3.select("#barchart")
 // Color function fill each each bar with different colors
 const myColor = d3.scaleOrdinal()
     .domain(data.map(d => d.activity))
-    .range(["#90B44B", "#42602D", "#90B44B", "#42602D", "#90B44B"])
+    .range(["#264653", "#2a9d8f", "#e9c46a", "#f4a261", "#e76f51"])
 
 //console.log(myColor.domain(), myColor.range())
 
@@ -48,10 +48,9 @@ svg.append("g")
     .call(xAxis)
     .attr("transform", `translate(0, ${height - margins.bottom})`)
     .selectAll(".tick text")
-    .attr("font-size","16")
-    .attr("fill", "#42602D");
+    .attr("font-size","16");
 
-//count of each activity
+//add count to each bar
 svg.selectAll("text.count")
     .data(data)
     .join("text")
@@ -80,7 +79,7 @@ const yScale1 = d3.scaleBand()
 //console.log(yScale1.domain(), yScale1.range())
 //console.log(yScale1, yScale1('eating'))
 
-// creat svg for second horizontal bar chart
+// creat svg for horizontal barchart
 const svg1 = d3.select("#barchart1")
     .append("svg")
     .attr("width", width)
@@ -101,8 +100,7 @@ svg1.append("g")
     .call(yAxis)
     .attr("transform", `translate(60, 0)`)
     .selectAll(".tick text")
-    .attr("font-size","14")
-    .attr("fill", "#42602D");
+    .attr("font-size","14");
 /*add texts to horizontal chart
 svg1.selectAll("text.activity")
     .data(data)

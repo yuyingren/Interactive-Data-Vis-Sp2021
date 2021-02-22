@@ -1,5 +1,5 @@
 svg{
-    border: palevioletred 2px solid;
+    border: rgb(2, 2, 2) 1.5px solid;
 }
 
 
@@ -7,17 +7,17 @@ table{
     border-collapse: collapse;
 }
 table{
-    border: 2px solid palevioletred;
+    border: 1.5px solid rgb(2, 2, 2);
     text-align: center;
     border-inline-style: hidden;
 }
 th{
     padding: 0.5rem;
     width: 5rem;
-    background-color: #FEDFE1;
-    border-top: 2px solid palevioletred;
-    border-bottom: 2px solid palevioletred;
+    border-top: 1.5px solid rgb(2, 2, 2);
+    border-bottom: 1.5px solid rgb(0, 0, 0);
 }
 td{
+    color: white;
     padding: 0.3rem;
 }
