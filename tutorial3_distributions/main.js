@@ -132,7 +132,7 @@ function draw() {
         .attr("r", 0)
         .attr("fill-opacity","0")
         .attr("fill", d => {
-          if (d.gender==="female") return "#f9c74f"
+          if (d.gender==="female") return "#fe7f2d"
           else return "#086788"
         })
         .attr("cx", d => xScale(d.MathScore))
@@ -140,7 +140,7 @@ function draw() {
         .call(enter => enter.transition()
           .duration(1000)
           .attr("r", radius)
-          .attr("fill-opacity","0.7") // Fade-in transition
+          .attr("fill-opacity","0.6") // Fade-in transition
         ),
       // + HANDLE UPDATE SELECTION
       update => update
@@ -162,10 +162,6 @@ function draw() {
         .attr("fill-opacity","0")
         .remove()
         )
-
-      
-      
-
 
 
     );
