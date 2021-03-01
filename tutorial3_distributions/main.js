@@ -74,7 +74,7 @@ function init() {
     .attr("text-anchor", "middle")
     .attr("font-size","16")
     .attr("fill","black")
-    .text("Student Performance Evaluation(Writing & Math)")
+    .text("Students Performance Evaluation(Writing & Math)")
 
 
   // + CREATE AXES
@@ -133,7 +133,7 @@ function draw() {
         .attr("fill-opacity","0")
         .attr("fill", d => {
           if (d.gender==="female") return "#f9c74f"
-          else return "#90be6d"
+          else return "#086788"
         })
         .attr("cx", d => xScale(d.MathScore))
         .attr("cy", d=> yScale(d.WritingScore))
@@ -147,7 +147,7 @@ function draw() {
         .call(update => update
         .transition()
         .duration(1000)
-        .attr("r", radius)
+        .attr("r", radius * 1.5)
         .transition()
         .duration(1000)
         .attr("r", radius)
