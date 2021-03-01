@@ -137,8 +137,12 @@ function draw() {
         .attr("cy", d=> yScale(d.WritingScore))
         .call(enter => enter.transition()
           .duration(1000)
-          .attr("r", radius)
+          .attr("r", radius * 1.5)
           .attr("fill-opacity","0.6") // Fade-in transition
+          .transition()
+          .duration(1000)
+          .attr("r", radius)
+          .attr("fill-opacity","0.6")
         ),
       // + HANDLE UPDATE SELECTION
       update => update
