@@ -38,9 +38,7 @@ function init() {
   .domain(d3.extent(state.data, d=> d.WritingScore))
   .range([height-margin.bottom, margin.top])
   //console.log("xScale", xScale, xScale(52))
-  /*colorScale = d3.scaleOrdinal()
-    .domain(["F", "M"])
-    .range(["red", "purple"]) */
+
   // + DEFINE AXES
   const xAxis = d3.axisBottom(xScale)
   const yAxis = d3.axisLeft(yScale)
