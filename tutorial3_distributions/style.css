@@ -23,3 +23,8 @@ body{
   .yAxis{
     font-size: 12px;
   }
+
+ #description {
+   width: 800px;
+   margin: 0 auto;
+ }
