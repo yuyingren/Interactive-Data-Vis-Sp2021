@@ -1,73 +1,613 @@
-Year,InstitutionSector,TotalEnrollment,White,BlackorAfricanAmerican,Hispanic/Latino,AmericanIndianorAlaskaNative,NativeHawaiianorOtherPacificIslander,TwoorMoreRaces,Asian,Non-residentAlien,Unknown
-2019,Community Colleges,192959,109000,22626,31531,994,255,5243,8386,2607,12317
-2018,Community Colleges,199873,115352,24025,31057,1106,274,5393,8393,2670,11603
-2017,Community Colleges,209418,120742,25454,30861,1071,305,5227,8359,2846,14553
-2016,Community Colleges,216277,126024,26125,30097,1143,346,4922,8134,3099,16387
-2015,Community Colleges,222998,130503,26466,29222,1108,389,4621,8054,3284,19351
-2014,Community Colleges,233812,142102,27625,28584,1104,380,4658,7787,3174,18398
-2013,Community Colleges,239791,149556,28146,27436,1292,376,3690,7662,3351,18282
-2012,Community Colleges,243007,155834,28208,25968,1227,402,3785,7594,3296,16693
-2011,Community Colleges,247667,160296,27695,24101,1234,363,3133,7236,3419,20190
-2010,Community Colleges,249343,167280,27483,21809,1339,320,2252,7241,3258,18361
-2009,Community Colleges,239243,155867,25331,18982,1472,87,1574,7294,3347,25289
-2008,Community Colleges,220995,151816,23461,17363,1345,3,0,6748,3190,17069
-2007,Community Colleges,214129,145466,21898,15478,1208,0,0,6568,3574,19937
-2006,Community Colleges,209059,142758,21150,14553,1151,0,0,6374,3486,19587
-2005,Community Colleges,208370,146118,21042,13782,1116,0,0,6315,3419,16578
-2004,Community Colleges,209646,151213,20658,13358,1124,0,0,6379,3597,13317
-2003,Community Colleges,204487,148061,19869,12623,1046,0,0,6224,3735,12929
-2002,Community Colleges,198522,145595,18700,12099,1104,0,0,6003,4119,10902
-2019,Comprehensive Colleges,83674,51819,10215,11663,306,88,2293,2893,1635,2762
-2018,Comprehensive Colleges,85613,53566,10527,11639,295,87,2275,2950,1675,2599
-2017,Comprehensive Colleges,86301,54882,10417,11219,298,86,2287,2953,1841,2318
-2016,Comprehensive Colleges,85633,55296,9825,10321,333,92,2186,2830,1908,2842
-2015,Comprehensive Colleges,87764,57806,9614,9629,322,110,2118,2713,2365,3087
-2014,Comprehensive Colleges,89442,59755,9088,9133,326,122,2064,2560,2823,3571
-2013,Comprehensive Colleges,89701,61881,8172,8115,313,107,1584,2601,2493,4435
-2012,Comprehensive Colleges,90908,63668,7680,7546,299,122,1797,2172,2610,5014
-2011,Comprehensive Colleges,92783,63383,6744,6827,303,88,1454,2158,2072,9754
-2010,Comprehensive Colleges,93204,57991,5273,5362,352,74,984,1881,2182,19105
-2009,Comprehensive Colleges,94024,63829,6900,5415,427,32,362,1912,2550,12597
-2008,Comprehensive Colleges,92825,64829,6785,5148,448,0,0,2016,2738,10861
-2007,Comprehensive Colleges,90894,63886,6553,4753,426,0,0,1944,2755,10577
-2006,Comprehensive Colleges,89059,63740,6367,4404,438,0,0,1904,2690,9516
-2005,Comprehensive Colleges,87171,63554,5695,4116,390,0,0,1859,2509,9048
-2004,Comprehensive Colleges,86808,64591,5441,3930,345,0,0,1853,2268,8380
-2003,Comprehensive Colleges,87543,66356,5369,3765,379,0,0,1836,2153,7685
-2002,Comprehensive Colleges,88899,68727,5414,3699,388,0,0,1817,1867,6987
-2019,Doctoral Degree Granting Institutions,112265,51837,9048,11151,220,59,2913,15890,16138,5009
-2018,Doctoral Degree Granting Institutions,111299,51711,8952,10923,219,55,2747,15179,16524,4989
-2017,Doctoral Degree Granting Institutions,109030,51254,8433,10368,235,73,2556,14205,16850,5056
-2016,Doctoral Degree Granting Institutions,107422,51275,7939,9653,229,69,2428,13603,16767,5459
-2015,Doctoral Degree Granting Institutions,105998,51278,7643,8957,213,77,2346,13276,16687,5521
-2014,Doctoral Degree Granting Institutions,105408,51647,7297,8505,215,73,2208,12992,16560,5911
-2013,Doctoral Degree Granting Institutions,104285,51983,7144,8080,286,97,1580,12748,15682,6685
-2012,Doctoral Degree Granting Institutions,102205,52416,6722,7529,280,110,1381,12026,14294,7447
-2011,Doctoral Degree Granting Institutions,101664,52914,6582,7290,286,100,860,11484,13240,8908
-2010,Doctoral Degree Granting Institutions,100457,52038,6310,6112,274,83,527,10971,13029,11113
-2009,Doctoral Degree Granting Institutions,100402,52194,6435,5562,311,7,28,10836,12060,12969
-2008,Doctoral Degree Granting Institutions,99162,51337,6533,5374,285,0,1,10324,11379,13929
-2007,Doctoral Degree Granting Institutions,96945,50861,6400,5062,299,0,0,10040,10572,13711
-2006,Doctoral Degree Granting Institutions,95136,51230,6211,5030,279,0,0,9873,9684,12829
-2005,Doctoral Degree Granting Institutions,94198,51523,6142,4806,284,0,0,9604,9050,12789
-2004,Doctoral Degree Granting Institutions,92737,51876,6069,4555,282,0,0,9680,8513,11762
-2003,Doctoral Degree Granting Institutions,94041,53050,6150,4464,261,0,0,9758,8590,11768
-2002,Doctoral Degree Granting Institutions,92295,51827,6129,4320,285,0,0,9554,8464,11716
-2019,Technology Colleges,26674,16050,3336,4241,121,24,726,1234,351,591
-2018,Technology Colleges,27266,16700,3381,4119,105,36,705,1166,416,638
-2017,Technology Colleges,27106,17039,3263,3863,105,50,656,1085,441,604
-2016,Technology Colleges,26806,17370,3200,3523,112,56,609,1049,443,444
-2015,Technology Colleges,26180,17280,3055,3149,102,54,569,932,545,494
-2014,Technology Colleges,26177,17541,3034,2945,101,56,517,887,517,579
-2013,Technology Colleges,25773,17502,2999,2719,112,54,418,825,504,640
-2012,Technology Colleges,25696,17505,2963,2432,121,53,429,758,634,801
-2011,Technology Colleges,25892,17291,2799,2250,107,50,386,773,677,1559
-2010,Technology Colleges,28180,19128,2671,2079,103,45,373,698,930,2153
-2009,Technology Colleges,27778,17971,2514,1480,160,0,15,586,815,4237
-2008,Technology Colleges,26541,18787,2436,1562,162,0,0,625,844,2125
-2007,Technology Colleges,25430,18232,2237,1409,128,0,0,620,809,1995
-2006,Technology Colleges,24321,17808,2159,1308,116,0,0,590,514,1826
-2005,Technology Colleges,24426,18144,2182,1243,125,0,0,650,493,1589
-2004,Technology Colleges,24381,18198,2151,1216,140,0,0,630,533,1513
-2003,Technology Colleges,23809,17841,2122,1239,117,0,0,606,550,1334
-2002,Technology Colleges,23223,17517,2108,1215,137,0,0,551,513,1182
+Race,Year,InstitutionSector,Enrollment
+White,2019,Comprehensive Colleges,51819
+White,2018,Comprehensive Colleges,53566
+White,2017,Comprehensive Colleges,54882
+White,2016,Comprehensive Colleges,55296
+White,2015,Comprehensive Colleges,57806
+White,2014,Comprehensive Colleges,59755
+White,2013,Comprehensive Colleges,61881
+White,2012,Comprehensive Colleges,63668
+White,2011,Comprehensive Colleges,63383
+White,2010,Comprehensive Colleges,57991
+White,2009,Comprehensive Colleges,63829
+White,2008,Comprehensive Colleges,64829
+White,2007,Comprehensive Colleges,63886
+White,2006,Comprehensive Colleges,63740
+White,2005,Comprehensive Colleges,63554
+White,2004,Comprehensive Colleges,64591
+White,2003,Comprehensive Colleges,66356
+White,2002,Comprehensive Colleges,68727
+Black or African American,2019,Comprehensive Colleges,10215
+Black or African American,2018,Comprehensive Colleges,10527
+Black or African American,2017,Comprehensive Colleges,10417
+Black or African American,2016,Comprehensive Colleges,9825
+Black or African American,2015,Comprehensive Colleges,9614
+Black or African American,2014,Comprehensive Colleges,9088
+Black or African American,2013,Comprehensive Colleges,8172
+Black or African American,2012,Comprehensive Colleges,7680
+Black or African American,2011,Comprehensive Colleges,6744
+Black or African American,2010,Comprehensive Colleges,5273
+Black or African American,2009,Comprehensive Colleges,6900
+Black or African American,2008,Comprehensive Colleges,6785
+Black or African American,2007,Comprehensive Colleges,6553
+Black or African American,2006,Comprehensive Colleges,6367
+Black or African American,2005,Comprehensive Colleges,5695
+Black or African American,2004,Comprehensive Colleges,5441
+Black or African American,2003,Comprehensive Colleges,5369
+Black or African American,2002,Comprehensive Colleges,5414
+Hispanic or Latino,2019,Comprehensive Colleges,11663
+Hispanic or Latino,2018,Comprehensive Colleges,11639
+Hispanic or Latino,2017,Comprehensive Colleges,11219
+Hispanic or Latino,2016,Comprehensive Colleges,10321
+Hispanic or Latino,2015,Comprehensive Colleges,9629
+Hispanic or Latino,2014,Comprehensive Colleges,9133
+Hispanic or Latino,2013,Comprehensive Colleges,8115
+Hispanic or Latino,2012,Comprehensive Colleges,7546
+Hispanic or Latino,2011,Comprehensive Colleges,6827
+Hispanic or Latino,2010,Comprehensive Colleges,5362
+Hispanic or Latino,2009,Comprehensive Colleges,5415
+Hispanic or Latino,2008,Comprehensive Colleges,5148
+Hispanic or Latino,2007,Comprehensive Colleges,4753
+Hispanic or Latino,2006,Comprehensive Colleges,4404
+Hispanic or Latino,2005,Comprehensive Colleges,4116
+Hispanic or Latino,2004,Comprehensive Colleges,3930
+Hispanic or Latino,2003,Comprehensive Colleges,3765
+Hispanic or Latino,2002,Comprehensive Colleges,3699
+American Indian or Alaska Native,2019,Comprehensive Colleges,306
+American Indian or Alaska Native,2018,Comprehensive Colleges,295
+American Indian or Alaska Native,2017,Comprehensive Colleges,298
+American Indian or Alaska Native,2016,Comprehensive Colleges,333
+American Indian or Alaska Native,2015,Comprehensive Colleges,322
+American Indian or Alaska Native,2014,Comprehensive Colleges,326
+American Indian or Alaska Native,2013,Comprehensive Colleges,313
+American Indian or Alaska Native,2012,Comprehensive Colleges,299
+American Indian or Alaska Native,2011,Comprehensive Colleges,303
+American Indian or Alaska Native,2010,Comprehensive Colleges,352
+American Indian or Alaska Native,2009,Comprehensive Colleges,427
+American Indian or Alaska Native,2008,Comprehensive Colleges,448
+American Indian or Alaska Native,2007,Comprehensive Colleges,426
+American Indian or Alaska Native,2006,Comprehensive Colleges,438
+American Indian or Alaska Native,2005,Comprehensive Colleges,390
+American Indian or Alaska Native,2004,Comprehensive Colleges,345
+American Indian or Alaska Native,2003,Comprehensive Colleges,379
+American Indian or Alaska Native,2002,Comprehensive Colleges,388
+Two or More Races,2019,Comprehensive Colleges,2293
+Two or More Races,2018,Comprehensive Colleges,2275
+Two or More Races,2017,Comprehensive Colleges,2287
+Two or More Races,2016,Comprehensive Colleges,2186
+Two or More Races,2015,Comprehensive Colleges,2118
+Two or More Races,2014,Comprehensive Colleges,2064
+Two or More Races,2013,Comprehensive Colleges,1584
+Two or More Races,2012,Comprehensive Colleges,1797
+Two or More Races,2011,Comprehensive Colleges,1454
+Two or More Races,2010,Comprehensive Colleges,984
+Two or More Races,2009,Comprehensive Colleges,362
+Two or More Races,2008,Comprehensive Colleges,0
+Two or More Races,2007,Comprehensive Colleges,0
+Two or More Races,2006,Comprehensive Colleges,0
+Two or More Races,2005,Comprehensive Colleges,0
+Two or More Races,2004,Comprehensive Colleges,0
+Two or More Races,2003,Comprehensive Colleges,0
+Two or More Races,2002,Comprehensive Colleges,0
+Native Hawaiian or Other Pacific Islander,2019,Comprehensive Colleges,88
+Native Hawaiian or Other Pacific Islander,2018,Comprehensive Colleges,87
+Native Hawaiian or Other Pacific Islander,2017,Comprehensive Colleges,86
+Native Hawaiian or Other Pacific Islander,2016,Comprehensive Colleges,92
+Native Hawaiian or Other Pacific Islander,2015,Comprehensive Colleges,110
+Native Hawaiian or Other Pacific Islander,2014,Comprehensive Colleges,122
+Native Hawaiian or Other Pacific Islander,2013,Comprehensive Colleges,107
+Native Hawaiian or Other Pacific Islander,2012,Comprehensive Colleges,122
+Native Hawaiian or Other Pacific Islander,2011,Comprehensive Colleges,88
+Native Hawaiian or Other Pacific Islander,2010,Comprehensive Colleges,74
+Native Hawaiian or Other Pacific Islander,2009,Comprehensive Colleges,32
+Native Hawaiian or Other Pacific Islander,2008,Comprehensive Colleges,0
+Native Hawaiian or Other Pacific Islander,2007,Comprehensive Colleges,0
+Native Hawaiian or Other Pacific Islander,2006,Comprehensive Colleges,0
+Native Hawaiian or Other Pacific Islander,2005,Comprehensive Colleges,0
+Native Hawaiian or Other Pacific Islander,2004,Comprehensive Colleges,0
+Native Hawaiian or Other Pacific Islander,2003,Comprehensive Colleges,0
+Native Hawaiian or Other Pacific Islander,2002,Comprehensive Colleges,0
+Asian,2019,Comprehensive Colleges,2893
+Asian,2018,Comprehensive Colleges,2950
+Asian,2017,Comprehensive Colleges,2953
+Asian,2016,Comprehensive Colleges,2830
+Asian,2015,Comprehensive Colleges,2713
+Asian,2014,Comprehensive Colleges,2560
+Asian,2013,Comprehensive Colleges,2601
+Asian,2012,Comprehensive Colleges,2172
+Asian,2011,Comprehensive Colleges,2158
+Asian,2010,Comprehensive Colleges,1881
+Asian,2009,Comprehensive Colleges,1912
+Asian,2008,Comprehensive Colleges,2016
+Asian,2007,Comprehensive Colleges,1944
+Asian,2006,Comprehensive Colleges,1904
+Asian,2005,Comprehensive Colleges,1859
+Asian,2004,Comprehensive Colleges,1853
+Asian,2003,Comprehensive Colleges,1836
+Asian,2002,Comprehensive Colleges,1817
+Non Resident Alien,2019,Comprehensive Colleges,1635
+Non Resident Alien,2018,Comprehensive Colleges,1675
+Non Resident Alien,2017,Comprehensive Colleges,1841
+Non Resident Alien,2016,Comprehensive Colleges,1908
+Non Resident Alien,2015,Comprehensive Colleges,2365
+Non Resident Alien,2014,Comprehensive Colleges,2823
+Non Resident Alien,2013,Comprehensive Colleges,2493
+Non Resident Alien,2012,Comprehensive Colleges,2610
+Non Resident Alien,2011,Comprehensive Colleges,2072
+Non Resident Alien,2010,Comprehensive Colleges,2182
+Non Resident Alien,2009,Comprehensive Colleges,2550
+Non Resident Alien,2008,Comprehensive Colleges,2738
+Non Resident Alien,2007,Comprehensive Colleges,2755
+Non Resident Alien,2006,Comprehensive Colleges,2690
+Non Resident Alien,2005,Comprehensive Colleges,2509
+Non Resident Alien,2004,Comprehensive Colleges,2268
+Non Resident Alien,2003,Comprehensive Colleges,2153
+Non Resident Alien,2002,Comprehensive Colleges,1867
+Unknown,2019,Comprehensive Colleges,2762
+Unknown,2018,Comprehensive Colleges,2599
+Unknown,2017,Comprehensive Colleges,2318
+Unknown,2016,Comprehensive Colleges,2842
+Unknown,2015,Comprehensive Colleges,3087
+Unknown,2014,Comprehensive Colleges,3571
+Unknown,2013,Comprehensive Colleges,4435
+Unknown,2012,Comprehensive Colleges,5014
+Unknown,2011,Comprehensive Colleges,9754
+Unknown,2010,Comprehensive Colleges,19105
+Unknown,2009,Comprehensive Colleges,12597
+Unknown,2008,Comprehensive Colleges,10861
+Unknown,2007,Comprehensive Colleges,10577
+Unknown,2006,Comprehensive Colleges,9516
+Unknown,2005,Comprehensive Colleges,9048
+Unknown,2004,Comprehensive Colleges,8380
+Unknown,2003,Comprehensive Colleges,7685
+Unknown,2002,Comprehensive Colleges,6987
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+Unknown,2019,Comprehensive Colleges,2762
+Unknown,2018,Comprehensive Colleges,2599
+Unknown,2017,Comprehensive Colleges,2318
+Unknown,2016,Comprehensive Colleges,2842
+Unknown,2015,Comprehensive Colleges,3087
+Unknown,2014,Comprehensive Colleges,3571
+Unknown,2013,Comprehensive Colleges,4435
+Unknown,2012,Comprehensive Colleges,5014
+Unknown,2011,Comprehensive Colleges,9754
+Unknown,2010,Comprehensive Colleges,19105
+Unknown,2009,Comprehensive Colleges,12597
+Unknown,2008,Comprehensive Colleges,10861
+Unknown,2007,Comprehensive Colleges,10577
+Unknown,2006,Comprehensive Colleges,9516
+Unknown,2005,Comprehensive Colleges,9048
+Unknown,2004,Comprehensive Colleges,8380
+Unknown,2003,Comprehensive Colleges,7685
+Unknown,2002,Comprehensive Colleges,6987
