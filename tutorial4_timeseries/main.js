@@ -2,7 +2,7 @@
 const width = window.innerWidth * 0.7,
   height = window.innerHeight * 0.7,
   margin = { top: 20, bottom: 50, left: 60, right: 40 },
-  radius = 5;
+  radius = 3;
 
 //const formatBillions = (num) => d3.format(".2s")(num).replace(/G/, 'B')
 const formatDate = d3.timeFormat("%Y")
@@ -193,13 +193,13 @@ function draw() {
     .text(d => `${formatDate(d.year)}: ${d.enrollment} `)*/
 
   // + DEFINE LINE GENERATOR FUNCTION
-  /*const lineGen = d3.line()
+  const lineGen = d3.line()
     .x(d => xScale(d.year))
-    .y(d => yScale(d.enrollment))*/
+    .y(d => yScale(d.enrollment))
 
   // + DRAW LINE AND/OR AREA
   
-  /*svg.selectAll(".line")
+  svg.selectAll(".line")
     .data([filteredData]) // data needs to take an []
     .join("path")
     .attr("class", 'line')
@@ -207,17 +207,18 @@ function draw() {
     .attr("stroke", "black")
     .transition()
     .duration(1000)
-    .attr("d", d => lineGen(d))*/
+    .attr("d", d => lineGen(d))
+  
   const areaGen = d3.area()
     .x(d => xScale(d.year))
-    .y(d => yScale(d.enrollment))
+    .y0(yScale(0))
+    .y1(d => yScale(d.enrollment))
 
   svg.selectAll(".area")
     .data([filteredData]) // data needs to take an []
     .join("path")
     .attr("class", 'area')
     .attr("fill", "#cce5df")
-    .attr("stroke", "#69b3a2")
     .attr("stroke-width", 1.5)
     .transition()
     .duration(1000)
