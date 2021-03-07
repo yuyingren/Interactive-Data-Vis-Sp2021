@@ -5,7 +5,7 @@ const width = window.innerWidth * 0.7,
   radius = 5;
 
 //const formatBillions = (num) => d3.format(".2s")(num).replace(/G/, 'B')
-//const formatDate = d3.timeFormat("%Y")
+const formatDate = d3.timeFormat("%Y")
 // these variables allow us to access anything we manipulate in init() but need access to in draw().
 // All these variables are empty before we assign something to them.
 let svg;
@@ -25,14 +25,13 @@ let state = {
 /* LOAD DATA */
 // + SET YOUR DATA PATH
 
-d3.csv('../data/SUNY_enrollments_y02y19.csv', d => {
-
-  return {
-    institution: d.InstitutionSector,
+d3.csv('../data/SUNY_enrollments_y02y19.csv', (d) => {
+  const formattedObj = {
     race: d.Race,
     enrollment: +d.Enrollment,
     year: new Date(+d.Year, 01, 01)
   }
+  return formattedObj
 })
 
   .then(data => {
@@ -122,7 +121,6 @@ function draw() {
   // + UPDATE SCALE(S), if needed
 
   // + UPDATE AXIS/AXES, if needed
-
   // + DRAW CIRCLES/LABEL GROUPS, if you decide to
   const dots = svg
     .selectAll(".dot")
@@ -138,25 +136,70 @@ function draw() {
         ),
       exit => exit.remove()
     );
+  /*var tooltip = d3.select("#d3-container")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "2px")
+    .style("border-radius", "5px")
+    .style("padding", "5px")
+  console.log("tooltip", tooltip)
+  
+  var mouseover = function(d) {
+    tooltip
+        .style("opacity", 1)
+    d3.select(this)
+        .style("stroke", "black")
+        .style("opacity", 1)
+    console.log("tooltip", tooltip)
+  }
+  var mousemove = function(d) {
+    tooltip
+        .html("The exact value of<br>this cell is: " + d.year)
+        .style("left", (d3.pointer(this)[0]+70) + "px")
+        .style("top", (d3.pointer(this)[1]) + "px")
+    console.log("tooltip", tooltip)
+  }
+  var mouseleave = function(d) {
+    tooltip
+        .style("opacity", 0)
+    d3.select(this)
+        .style("stroke", "none")
+        .style("opacity", 0.8)
+  }*/
+  
+
   dots.selectAll("circle")
     .data(d => [d]) // pass along data from parent to child
     .join("circle")
     .attr("r", radius)
+    //.on("mouseover", mouseover)
+    //.on("mousemove", mousemove)
+    //.on("mouseleave", mouseleave)
+    /*.on('mouseout', function (d, i) {
+      d3.select(this).transition()
+            .duration('50')
+            .attr('opacity', '1')})*/
+      
+
   
-  dots.selectAll("text")
+  
+  /*dots.selectAll("text")
     .data(d => [d]) // pass along data from parent to child
     .join("text")
     .attr("text-anchor", "end")
-    .text(d => `${d.year}: ${d.enrollment} `)
+    .text(d => `${formatDate(d.year)}: ${d.enrollment} `)*/
 
   // + DEFINE LINE GENERATOR FUNCTION
-  const lineGen = d3.line()
+  /*const lineGen = d3.line()
     .x(d => xScale(d.year))
-    .y(d => yScale(d.enrollment))
+    .y(d => yScale(d.enrollment))*/
 
   // + DRAW LINE AND/OR AREA
   
-  svg.selectAll(".line")
+  /*svg.selectAll(".line")
     .data([filteredData]) // data needs to take an []
     .join("path")
     .attr("class", 'line')
@@ -164,7 +207,21 @@ function draw() {
     .attr("stroke", "black")
     .transition()
     .duration(1000)
-    .attr("d", d => lineGen(d))
+    .attr("d", d => lineGen(d))*/
+  const areaGen = d3.area()
+    .x(d => xScale(d.year))
+    .y(d => yScale(d.enrollment))
+
+  svg.selectAll(".area")
+    .data([filteredData]) // data needs to take an []
+    .join("path")
+    .attr("class", 'area')
+    .attr("fill", "#cce5df")
+    .attr("stroke", "#69b3a2")
+    .attr("stroke-width", 1.5)
+    .transition()
+    .duration(1000)
+    .attr("d", d => areaGen(d))
 
 } 
 
