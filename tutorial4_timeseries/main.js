@@ -1,7 +1,7 @@
 /* CONSTANTS AND GLOBALS */
 const width = window.innerWidth * 0.7,
   height = window.innerHeight * 0.7,
-  margin = { top: 20, bottom: 50, left: 60, right: 40 },
+  margin = { top: 20, bottom: 50, left: 67, right: 40 },
   radius = 3;
 
 //const formatBillions = (num) => d3.format(".2s")(num).replace(/G/, 'B')
@@ -14,6 +14,8 @@ let yScale;
 let yAxis;
 let xAxisGroup;
 let yAxisGroup;
+//var pageX = d3.event.pageX;
+//var pageY = d3.event.pageY;
 
 /* APPLICATION STATE */
 let state = {
@@ -101,7 +103,7 @@ function init() {
 
   yAxisGroup.append("text")
     .attr("class", 'yLabel')
-    .attr("transform", `translate(${-55}, ${height / 2})`)
+    .attr("transform", `translate(${-60}, ${height / 2})`)
     .attr("writing-mode", 'vertical-rl')
     .attr("text-anchor", "middle")
     .attr("font-size","14")
@@ -136,61 +138,34 @@ function draw() {
         ),
       exit => exit.remove()
     );
-  /*var tooltip = d3.select("#d3-container")
-    .append("div")
-    .style("opacity", 0)
-    .attr("class", "tooltip")
-    .style("background-color", "white")
-    .style("border", "solid")
-    .style("border-width", "2px")
-    .style("border-radius", "5px")
-    .style("padding", "5px")
-  console.log("tooltip", tooltip)
   
-  var mouseover = function(d) {
-    tooltip
-        .style("opacity", 1)
-    d3.select(this)
-        .style("stroke", "black")
-        .style("opacity", 1)
-    console.log("tooltip", tooltip)
-  }
-  var mousemove = function(d) {
-    tooltip
-        .html("The exact value of<br>this cell is: " + d.year)
-        .style("left", (d3.pointer(this)[0]+70) + "px")
-        .style("top", (d3.pointer(this)[1]) + "px")
-    console.log("tooltip", tooltip)
-  }
-  var mouseleave = function(d) {
-    tooltip
-        .style("opacity", 0)
-    d3.select(this)
-        .style("stroke", "none")
-        .style("opacity", 0.8)
-  }*/
-  
-
   dots.selectAll("circle")
     .data(d => [d]) // pass along data from parent to child
     .join("circle")
     .attr("r", radius)
-    //.on("mouseover", mouseover)
-    //.on("mousemove", mousemove)
-    //.on("mouseleave", mouseleave)
-    /*.on('mouseout', function (d, i) {
-      d3.select(this).transition()
+    .attr("fill", "#004b23")
+  
+  
+    
+  dots.selectAll("text")
+      .data(d => [d]) // pass along data from parent to child
+      .join("text")
+      .attr("text-anchor", "start")
+      .attr('opacity', '0')
+      .text(d => `${formatDate(d.year)}: ${d3.format(",")(d.enrollment)} `)
+      .on('mouseover', function (d, i) {
+        d3.select(this).transition()
+            .duration('100')
+            .attr('opacity', '.8')
+            .attr("fill", "#004b23");
+        })
+      .on('mouseout', function (d, i) {
+        d3.select(this).transition()
             .duration('50')
-            .attr('opacity', '1')})*/
-      
+            .attr('opacity', '0');
+        })
 
-  
-  
-  /*dots.selectAll("text")
-    .data(d => [d]) // pass along data from parent to child
-    .join("text")
-    .attr("text-anchor", "end")
-    .text(d => `${formatDate(d.year)}: ${d.enrollment} `)*/
+    
 
   // + DEFINE LINE GENERATOR FUNCTION
   const lineGen = d3.line()
@@ -204,7 +179,7 @@ function draw() {
     .join("path")
     .attr("class", 'line')
     .attr("fill", "none")
-    .attr("stroke", "black")
+    .attr("stroke", "#004b23")
     .transition()
     .duration(1000)
     .attr("d", d => lineGen(d))
@@ -218,8 +193,7 @@ function draw() {
     .data([filteredData]) // data needs to take an []
     .join("path")
     .attr("class", 'area')
-    .attr("fill", "#cce5df")
-    .attr("stroke-width", 1.5)
+    .attr("fill", "#d4e09b")
     .transition()
     .duration(1000)
     .attr("d", d => areaGen(d))

@@ -1,10 +1,23 @@
-path.line{
+/*path.line{
     fill: none;
     stroke: #EF5285;
     stroke-width: 3px;
-  }
+  }*/
 
-.dot{
+/*.dot{
     fill: #EF5285;
     stroke: #EF5285;
+  }*/
+
+  svg{
+    margin: 0 auto;
+    display: block;
+  }
+  .xLabel, .yLabel{
+    text-transform: uppercase;
+    
+  }
+
+  .yAxis, .xAxis{
+    font-size: 12px;
   }
