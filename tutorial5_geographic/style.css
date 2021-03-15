@@ -2,7 +2,7 @@
 .hover-content{
   top: 0;
   left: 0;
-  max-width: 300px;
+  max-width: 100px;
   background-color: white;
   padding: .5em;
   opacity: 0;
@@ -15,4 +15,30 @@
 
 .hover-content.visible{
   opacity: 1;
+  font-size: 12px;
 }
+
+svg{
+  
+  margin: 2%;
+  display: block;
+}
+
+.legend {
+  font-size: 10px;
+}
+
+.Titlelines {
+  text-align: center;
+  margin: 2%;
+}
+.description {
+  display: block;
+  margin: 5%;
+}
+.content {
+  text-align: justify;
+  font-size: 14px;
+}
+
+

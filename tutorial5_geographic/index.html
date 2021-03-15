@@ -5,8 +5,30 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    Welcome to Interactive Data Visualization Tutorials
+    <label for="dropdown">Select stations by range: </label>
+    <select id="dropdown" name="dropdown"></select>
     <div id="d3-container"> </div>
+      <div id = "description">
+        <h3 class="Titlelines">Data Visualization: Tutorial 5 Geographic</h3>
+        <h5 class="Titlelines">Yuying Ren</h5>
+        <h5 class="Titlelines">CUNY Graduate Center</h5>
+        <p class="content">This graph shows the change of unusually hot temperatures across
+          the U.S. from year 1948 to 2015.<br />
+          <br />
+          The cricles represent the wather stations across the country. The circles 
+          are scaled by the change of unusually hot days at each station. Orange cricles 
+          indicate the unusual hot days are increasing overtime(more common), blue 
+          circles indicate the number of unusual hot days are decreasing(less common), 
+          the transparent circles indicate the change is zero.<br />
+          <br />
+          The changes are also grouped by range of 10, individual groups can be viewed 
+          using the selection bar above.<br />
+          <br />
+          The original dataset is 
+          <a href="https://www.epa.gov/climate-indicators/climate-change-indicators-high-and-low-temperatures#tab-4">here</a>.
+        </p>
+      </div>
+
     <script src="../lib/d3.js"></script>
     <script src="main.js"></script>
   </body>
