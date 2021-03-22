@@ -25,7 +25,7 @@ let state = {
 /**
 * LOAD DATA
 * */
-d3.json("../../data/flare.json", d3.autotype).then(data => {
+d3.json("../data/flare.json", d3.autotype).then(data => {
  state.data = data;
  init();
 });
