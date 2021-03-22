@@ -182,7 +182,7 @@ function init() {
  leafGroups1
  .on("mouseenter", (event, d) => { // second argument returns the data associated with that leaf
    state.hover = {
-     position: [d.x, d.y],
+     position: [d.x * 1.1, d.y],
      name: d.data.name,
      value: d3.format(",")(d.value),
      // example for something you can do with a leaf node:
@@ -237,7 +237,7 @@ function draw1() {
     `
       ).transition()
       .duration(200)
-      .style("transform", `translate(${(width - 150) / 2}px, ${height - 50}px )`)
+      .style("transform", `translate(${state.hover.position[0]}px, ${state.hover.position[1]}px )`)
   }
  
   // hide/show tooltip depending on whether state.hover exists
