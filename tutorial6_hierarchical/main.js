@@ -46,6 +46,7 @@ function init() {
  const opacityScale = d3.scaleLinear()
    .domain([4, 2])
    .range([.55, .95]);
+ 
 
  const container = d3.select("#d3-container").style("position", "relative");
  const root = d3.hierarchy(state.data)
@@ -175,14 +176,15 @@ function init() {
   leafGroups1.append("circle")
    .attr("r", d => d.r)
    .attr("fill", d => d.children ? colorScale1(d.depth) : "#ef798a")
-   .attr("opacity", ".85")
+   .attr("opacity", d => d.children ? ".85" : "1")
 
 
  // + CREATE YOUR GRAPHICAL ELEMENTS
  leafGroups1
  .on("mouseenter", (event, d) => { // second argument returns the data associated with that leaf
    state.hover = {
-     position: [d.x * 1.1, d.y],
+     position: [d.x + d.r, d.y],
+     
      name: d.data.name,
      value: d3.format(",")(d.value),
      // example for something you can do with a leaf node:
@@ -191,6 +193,7 @@ function init() {
        .map(d => d.data.name)
        .join(" => ".fontcolor("#ff595e"))
    }
+   //console.log("state.hover.postion", state.hover.position)
    draw1()
  })
  .on("mouseleave", () => {
